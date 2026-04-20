@@ -12,6 +12,14 @@ yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
 
+# Terraform
+terraform/
+.terraform/
+*.tfstate
+*.tfstate.*
+terraform.tfvars
+.terraform.lock.hcl
+
 # OS
 .DS_Store
 
