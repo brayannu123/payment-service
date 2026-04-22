@@ -15,6 +15,9 @@ lerna-debug.log*
 #terraform
 .terraform/
 terraform/.terraform/
+*.tfstate
+*.tfstate.backup
+*.zip
 
 # OS
 .DS_Store
