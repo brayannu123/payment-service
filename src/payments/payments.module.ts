@@ -8,7 +8,14 @@ import { PaymentsController } from './payments.controller';
 @Module({
   imports: [HttpModule],
   controllers: [PaymentsController],
-  providers: [PaymentsService, DynamoDBService, SqsService],
-  exports: [PaymentsService],
+  providers: [
+    PaymentsService,
+    DynamoDBService,
+    SqsService,
+  ],
+  exports: [
+    PaymentsService,
+    DynamoDBService, 
+  ],
 })
 export class PaymentsModule {}
