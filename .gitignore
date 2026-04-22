@@ -12,7 +12,9 @@ yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
 
-
+#terraform
+.terraform/
+terraform/.terraform/
 
 # OS
 .DS_Store
