@@ -1,6 +1,6 @@
 import { NestFactory } from '@nestjs/core';
 import { Logger } from '@nestjs/common';
-import { WorkerModule } from './worker.module';
+import { WorkerModule } from './worker/worker.module';
 
 async function bootstrap() {
   const logger = new Logger('WorkerMain');
