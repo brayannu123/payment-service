@@ -3,6 +3,7 @@ import { ConfigModule } from '@nestjs/config';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { PaymentsModule } from './payments/payments.module';
+import { WorkerModule } from './worker/worker.module';
 
 @Module({
   imports: [
@@ -10,6 +11,7 @@ import { PaymentsModule } from './payments/payments.module';
       isGlobal: true,
     }),
     PaymentsModule,
+    WorkerModule,
   ],
   controllers: [AppController],
   providers: [AppService],
